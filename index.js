@@ -1,6 +1,33 @@
+// String questions
 const farmAnimals = 'cow horse sheep pig chicken';
+//1
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ')
+//2
+ let animalNames = farmAnimals
 
+let [bessie, , dolly, babe, little] = animalNames.split(' ');
+
+let animalColor = animalNames
+
+let [blackAndWhite, ,black, pink, ] = animalColor.split(' ');
+
+const sounds = {
+  moo: "cow",
+  neigh: "horse",
+  baa: "sheep",
+  oink: "pig",
+  cluck: "chicken"
+}
+///////// Array Questions 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+const [red, orange, yellow, green, blue, indigo, violet] = colors; 
+
+const [r, o, y, g, b, i, v] = colors
+
+const [ , , , , ,indg, ] = colors
+
+// Object questions
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -10,6 +37,15 @@ const muppet = {
   partner: 'Kermit'
 };
 
+// assigning variables to the keys in the object. You can name them anything but for the sake of this test
+// we are naming them after what they are called in the object 
+const muppetName = muppet.muppetName;
+const color = muppet.color;
+const song = muppet.song;
+const job = muppet.job;
+const partner = muppet.partner;
+
+// Object nested question 
 const nestedMuppet = {
   nestedName: 'Kermit',
   nestedColor: 'green',
@@ -25,6 +61,10 @@ const nestedMuppet = {
   nestedPartner: 'Miss Piggy'
 };
 
+const song2 = nestedMuppet.album.theMuppetMovie.song2
+const song4 = nestedMuppet.album.theMuppetMovie.song4
+const nestedJob = nestedMuppet.nestedJob
+const nestedPartner = nestedMuppet.nestedPartner
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
